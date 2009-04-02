@@ -3,3 +3,4 @@ MANIFEST
 Makefile.PL
 t/000_tests.t
 README
+Changes
