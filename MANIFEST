@@ -2,3 +2,4 @@ lib/OO/Closures.pm
 MANIFEST
 Makefile.PL
 t/000_tests.t
+README
