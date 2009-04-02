@@ -1,4 +1,4 @@
-Closures.pm
+lib/OO/Closures.pm
 MANIFEST
 Makefile.PL
-test.pl
+t/000_tests.t
