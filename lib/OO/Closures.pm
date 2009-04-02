@@ -1,30 +1,12 @@
 package OO::Closures;
 
-################################################################################
-#
-# $Author: abigail $
-#
-# $Date: 1999/08/02 06:06:04 $
-#
-# $Id: Closures.pm,v 1.2 1999/08/02 06:06:04 abigail Exp abigail $
-#
-# $Log: Closures.pm,v $
-# Revision 1.2  1999/08/02 06:06:04  abigail
-# Bug fixes and more efficient use of code (Rick Delaney).
-# Free and open software copyright/license.
-# Scalar references as methods (to complement for Eiffel like features).
-# CPAN friendly module.
-#
-# Revision 1.1  1998/10/01 22:54:57  abigail
-# Initial revision
-#
-#
-#
-################################################################################
+use 5.006;
 
-use vars qw /$VERSION/;
+use strict;
+use warnings;
+no  warnings 'syntax';
 
-($VERSION) = '$Revision: 1.2 $' =~ /(\d+.\d+)/;
+our $VERSION = '2009040201';
 
 sub import {
     my $my_package       = __PACKAGE__;
@@ -291,29 +273,35 @@ This documentation uses the word 'class' in cases where it's not really
 a class in the sense of the usual object oriented way. Mark-Jason Dominus 
 calls this I<class-less> object orientism.
 
-=head1 HISTORY
+=head1 DEVELOPMENT
 
-    $Log: Closures.pm,v $
-    Revision 1.2  1999/08/02 06:06:04  abigail
-    Bug fixes and more efficient use of code (Rick Delaney).
-    Free and open software copyright/license.
-    Scalar references as methods (to complement for Eiffel like features).
-    CPAN friendly module.
-
-    Revision 1.1  1998/10/01 22:54:57  abigail
-    Initial revision
-
+The current sources of this module are found on github,
+L<< git://github.com/Abigail/oo--closures.git >>.
 
 =head1 AUTHOR
 
-This package was written by Abigail, I<abigail@delanet.com>.
+This package was written by Abigail, L<< mailto:oo-closures@abigail.be >>.
 
 =head1 COPYRIGHT and LICENSE
 
-This code is copyright 1998, 1999 by Abigail.
+Copyright (C) 1998 - 2009, Abigail
+        
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+     
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
 
-This code is free and open software. You may use, copy, modify, distribute,
-and sell this program (and any modified variants) in any way you wish,
-provided you do not restrict others from doing the same.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
 
 =cut
